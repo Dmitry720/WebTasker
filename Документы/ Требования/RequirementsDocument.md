@@ -20,16 +20,22 @@
 Проект использует язык Python, Django Framework, для хранения данных используется база данных SQLite3.
 #### 2.2. Интерфейс пользователя <a name="2.2"></a>
 - Окно входа в систему
+
   ![Окно входа в систему](https://github.com/Dmitry720/WebTasker/blob/master/Documents/Requirements/Mockups/Login.png)
 - Окно регистрации
+
   ![Окно регистрации](https://github.com/Dmitry720/WebTasker/blob/master/Documents/Requirements/Mockups/Registration.png)
 - Окно редактирования пользователя
+
   ![Окно редактирования пользователя](https://github.com/Dmitry720/WebTasker/blob/master/Documents/Requirements/Mockups/Settings.png)
 - Окно списка проектов
+
   ![Окно списка проектов](https://github.com/Dmitry720/WebTasker/blob/master/Documents/Requirements/Mockups/ProjectList.png)
 - Окно проекта
+
   ![Окно проекта](https://github.com/Dmitry720/WebTasker/blob/master/Documents/Requirements/Mockups/Project.png)
 - Окно подзадачи
+
   ![Окно подзадачи](https://github.com/Dmitry720/WebTasker/blob/master/Documents/Requirements/Mockups/Subtask.png)
 
 #### 2.3. Характеристики пользователей <a name="2.3"></a>
