@@ -86,7 +86,7 @@
 ![Login activity](https://github.com/Dmitry720/WebTasker/blob/master/Documents/Diagrams/Activity/Login.PNG)
 ##### 2.3 Просмотр всех проектов<a name="2.3"></a> 
 
-![Project List activity](https://github.com/Dmitry720/WebTasker/blob/master/Documents/Diagrams/Activity/ProjectList.PNG)
+![Project List activity](https://github.com/Dmitry720/WebTasker/blob/master/Documents/Diagrams/Activity/ProjectsList.PNG)
 ##### 2.4 Просмотр информации о проекте<a name="2.4"></a>
 
 ![Product Info activity](https://github.com/Dmitry720/WebTasker/blob/master/Documents/Diagrams/Activity/ProjectInfo.PNG)
