@@ -1,6 +1,6 @@
 # WebTasker
 # TRTPO project
-WebTasker is a web application designed to monitor tasks in real time
+WebTasker is a web application designed to monitor tasks in real time. Written in python language.
 
 # Contents
 1. [Documentation](https://github.com/Dmitry720/WebTasker/tree/master/Documents) <br>
