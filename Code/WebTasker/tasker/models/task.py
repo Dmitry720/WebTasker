@@ -3,6 +3,7 @@ from django.urls import reverse
 from django.utils import timezone
 from tasker.encryptors import task_slug_generate
 from tasker.constants import TASK_STATUSES
+from tasker.managers import TaskManager
 
 
 class Task(models.Model):
@@ -28,6 +29,7 @@ class Task(models.Model):
     date_create = models.DateTimeField(default=timezone.now)
     date_completion = models.DateTimeField(blank=True, null=True)
 
+    objects = TaskManager
 
     def __str__(self):
         return self.title

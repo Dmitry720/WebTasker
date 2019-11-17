@@ -2,6 +2,7 @@ from django.db import models
 from django.urls import reverse
 from django.utils import timezone
 from tasker.encryptors import project_slug_generate
+from tasker.managers import ProjectManager
 
 
 class Project(models.Model):
@@ -20,6 +21,7 @@ class Project(models.Model):
     manager = models.ForeignKey(to='User', on_delete=models.CASCADE, related_name='manage_projects')
     date_create = models.DateTimeField(default=timezone.now)
 
+    objects = ProjectManager
 
     def __str__(self):
         return self.title

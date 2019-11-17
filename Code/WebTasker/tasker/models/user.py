@@ -3,6 +3,7 @@ from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 from tasker.encryptors import user_slug_generate
+from tasker.managers import UserManager
 
 
 class User(AbstractUser):
@@ -17,15 +18,10 @@ class User(AbstractUser):
         password - Password of profile user. Saving in encrypted view;
         slug - Short reference to use in URL's;
         tasks - Foreign key. Get manager of all tasks of user;
-        subtasks - Foreign key. Get manager of all subtasks of task of user;
-        manage_projects - Foreign key. Get manager of all managing projects of user;
-        is_stuff - Can profile login in admin panel;
-        is_manager - Get access for managing projects;
-        is_active - This profile has confirmed email or not;
-        date_joined - Date of creating profile of user;
     """
     slug = models.CharField(_('slug'), max_length=150)
     password = models.CharField(_('password'), max_length=128)
+    objects = UserManager
 
     def __str__(self):
         return f"Developer {self.username}"
