@@ -1,0 +1,37 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block style_page %}
+    <link rel='stylesheet' href="{% static 'css/details/details_of_project.css' %}">
+{% endblock %}
+
+{% block body_page %}
+    <div align="center">
+        <div class="page-block">
+            <div class="title-project">
+                <a href="{{ object.get_absolute_url }}">{{ object.title }}</a>
+                <p>Manager:
+                    <a href="{% url 'profile_user_url' slug=object.manager.username %}">{{ object.manager.username }}</a>
+                </p>
+            </div>
+            <div class="body-project">
+                <p class="par-project">Description:</p>
+                <p class="description-project">{{ object.description }}</p>
+            </div>
+            <div class="tasks-project">
+                {% for task in object.tasks.all %}
+                    <div class="task-project {{ task.task_status }}">
+                        <div class="task-name-project">
+                            <a href="{{ task.get_absolute_url }}" class="task-link"> * {{ task.title }}</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="footer-project">
+                <p></p>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

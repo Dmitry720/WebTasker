@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Tasks.Here</title>
+    <link rel='stylesheet' href="{% static 'css/base_page.css' %}">
+    {% block style_page %}
+        Don't load styles page
+    {% endblock %}
+</head>
+<body>
+<nav>
+    <table class='nav_table'>
+        <tr>
+            <td class='nav_t_main'>
+                <a href="{% url 'main_url' %}" class='url_td'>
+                    <div class="table-cell-main">Projects</div>
+                </a>
+            </td>
+            <td class='nav_t_td'>
+                {% if request.user.is_authenticated %}
+                    <a href="{% url 'profile_url' %}" class='url_td'>
+                        <div class="table-cell">Cabinet</div>
+                    </a>
+                {% else %}
+                    <a href="{% url 'user_login_url' %}" class='url_td'>
+                        <div class="table-cell">Enter</div>
+                    </a>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+</nav>
+
+
+{% block body_page %}
+    Don't load body of page<br><br>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,68 @@
+p {
+    margin: 0 0 0 0;
+    padding: 10px 0 20px 0;
+}
+
+.page-block {
+    width: 80%;
+    white-space: nowrap;
+}
+
+.info-user {
+    vertical-align: top;
+    display: inline-block;
+    width: 30%;
+}
+
+.header-info {
+    border-radius: 15px 15px 0 0;
+    background-color: darkblue;
+    padding-top: 5px;
+    font-size: 20px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    color: white;
+}
+
+.table-info {
+    background-color: lightblue;
+    width: 100%;
+    padding: 5px 15px 0 15px;
+}
+
+.footer-info {
+    border-radius: 0 0 15px 15px;
+    background-color: darkblue;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    color: white;
+}
+
+a.settings-link {
+    width: 300px;
+    text-decoration: none;
+    color: white;
+}
+
+a.logout-link {
+    width: 300px;
+    text-decoration: none;
+    color: white;
+}
+
+.td-par {
+    width: 25%;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.td-val {
+    padding-bottom: 20px;
+    width: 75%;
+    font-size: 20px;
+}
+
+.half-for-link {
+    width: 45%;
+    display: inline-block;
+}

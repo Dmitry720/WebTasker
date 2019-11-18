@@ -1,0 +1,129 @@
+.container.main {
+    width: 80%;
+    white-space: normal;
+}
+
+.projects-list {
+    display: inline-block;
+    width: 70%;
+}
+
+.project {
+    white-space: nowrap;
+}
+
+.title-project {
+    margin: 10px 0 0 0;
+    padding: 20px 0 20px 30px;
+    font-size: 25px;
+    text-align: left;
+    background-color: darkblue;
+    border-radius: 15px 15px 0 0;
+}
+
+.title-project a {
+    text-decoration: none;
+    color: white;
+}
+
+.manager-info {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
+
+.body-project {
+    margin: 0 0 0 0;
+    padding: 10px 0 10px 10px;
+    background-color: lightblue;
+    text-align: left;
+
+}
+
+.par-project {
+    margin: 5px 0 5px 0;
+    padding: 0 0 0 0;
+    color: darkred;
+    font-size: 20px;
+
+}
+
+.description-project {
+    margin: 0 0 0 0;
+    padding: 10px 0 10px 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.tasks-project {
+    background-color: cornflowerblue;
+    text-align: left;
+    white-space: nowrap;
+
+}
+
+.task-project {
+    padding: 5px 0 5px 15px;
+}
+
+.Complete {
+    background-color: lightgreen;
+}
+
+.Canceled {
+    background-color: lightcoral;
+}
+
+.task-project.add {
+    padding: 15px 0 15px 20px;
+}
+
+.task-name-project {
+    display: inline-block;
+    width: 55%;
+}
+
+.task-one-project {
+    padding-left: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: darkred;
+}
+
+.footer-project {
+    text-decoration: none;
+    padding: 15px 0 15px 20px;
+    background-color: lightblue;
+    text-align: left;
+    border-radius: 0 0 15px 15px;
+}
+
+.footer-project a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    color: darkred;
+}
+
+.settings-task-project {
+    display: inline-block;
+    text-align: right;
+    width: 15%;
+    font-size: 15px;
+}
+
+.settings-task-project a {
+    text-decoration: none;
+    color: darkred;
+}
+
+.add-task-project {
+    text-decoration: none;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    color: darkred;
+}

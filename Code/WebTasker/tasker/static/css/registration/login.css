@@ -1,0 +1,70 @@
+.main-page {
+    width: 35%;
+    white-space: nowrap;
+}
+
+.top-block {
+    margin-top: 50px;
+    background-color: darkblue;
+    color: white;
+    padding: 20px 0 20px 0;
+    border-radius: 15px 15px 0 0;
+    font-size: 35px;
+}
+
+.row-block {
+    background-color: lightblue;
+    font-size: 15px;
+    padding: 8px 0 7px 0;
+}
+
+.name-block {
+    text-align: right;
+    width: 37%;
+    display: inline-block;
+}
+
+.error-field {
+    color: darkred;
+    font-size: 15px;
+}
+
+.val-block {
+    text-align: left;
+    width: 63%;
+    display: inline-block;
+}
+
+.btn-block {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 0 10px 0;
+    border-radius: 0 0 15px 15px;
+    font-size: 20px
+}
+
+.btn-confirm {
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+.registration-link {
+    padding: 10px 0 10px 0;
+    color: lightgray;
+    display: inline;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.registration-link:hover {
+    color: lightpink;
+}
+
+.registration-block {
+    white-space: nowrap;
+    font-size: 15px;
+    padding: 10px 0 0 10px;
+    text-decoration: none;
+    color: lightslategray;
+}

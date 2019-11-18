@@ -1,0 +1,42 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block style_page %}
+    <link rel='stylesheet' href="{% static 'css/projects/projects_page.css' %}">
+{% endblock %}
+
+{% block body_page %}
+    <div align="center">
+        <div class="container main">
+            {% for project in projects %}
+                <div class="project container">
+                    <div class="title-project">
+                        <a href="{{ project.get_absolute_url }}">{{ project.title }}</a>
+                        <p class="manager-info">Manager:
+                            <a href="{{ project.manager.get_absolute_url }}">{{ project.manager.username }}</a>
+                        </p>
+                    </div>
+                    <div class="body-project">
+                        <p class="par-project">Description:</p>
+                        <p class="description-project">{{ project.description }}</p>
+                    </div>
+                    <div class="tasks-project">
+                        {% for task in project.tasks.all %}
+                            <div class="task-project {{ task.task_status }}">
+                                <div class="task-name-project">
+                                    <a href="{{ task.get_absolute_url }}" class="task-one-project">
+                                        * {{ task.title }}</a>
+                                </div>
+                            </div>
+
+                        {% endfor %}
+                    </div>
+                    <div class="footer-project">
+                        <a href="{{ project.get_absolute_url }}">Read more</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

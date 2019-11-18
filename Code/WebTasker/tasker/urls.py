@@ -12,8 +12,8 @@ urlpatterns = [
     path('profile-settings/', views.profile_settings_view, name='profile_settings_url'),
 
     # PROJECTS
-    path('project-list/', projects_url, name='projects_url'),
-    path('project/<slug>/', project_details_url, name='project_details_url'),
+    path('project-list/', views.projects_view, name='projects_url'),
+    path('project/<slug>/', views.DetailsProjectView.as_view(), name='project_details_url'),
 
     # TASK
     path('task/<slug>/', task_details_url, name='task_details_url'),

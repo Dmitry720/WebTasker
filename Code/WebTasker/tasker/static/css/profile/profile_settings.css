@@ -1,0 +1,71 @@
+.block-settings {
+    display: inline-block;
+    width: 40%;
+}
+
+.header-settings {
+    padding: 10px 0 10px 0;
+    margin: 10px 0 0 0;
+    background-color: darkblue;
+    color: white;
+    font-size: 25px;
+    border-radius: 15px 15px 0 0;
+}
+
+.content-settings {
+    width: 100%;
+}
+
+.field-form-setting {
+    padding: 10px 0 10px 0;
+    background-color: lightblue;
+}
+
+.btn-save-info {
+    text-align: right;
+    padding-right: 22%;
+}
+
+.par-setting {
+    width: 35%;
+    text-align: right;
+    display: inline-block;
+
+}
+
+.val-setting {
+    width: 65%;
+    text-align: left;
+    display: inline-block;
+}
+
+.pass-change-label {
+    padding: 10px 0 10px 30px;
+    background-color: cornflowerblue;
+    text-align: left;
+    color: darkred;
+}
+
+.par-pswd-setting {
+    width: 40%;
+    text-align: right;
+    display: inline-block;
+
+}
+
+.val-pswd-setting {
+    width: 60%;
+    text-align: left;
+    display: inline-block;
+}
+
+.btn-save-password {
+    text-align: right;
+    padding-right: 17%;
+}
+
+.footer-settings {
+    padding: 20px 0 20px 0;
+    background-color: darkblue;
+    border-radius: 0 0 15px 15px;
+}

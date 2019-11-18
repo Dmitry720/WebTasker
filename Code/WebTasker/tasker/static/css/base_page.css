@@ -1,0 +1,81 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+    height: 200px;
+}
+
+footer {
+    text-align: center;
+    color: red;
+    margin-top: 50px;
+}
+
+.nav_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.top-search {
+    white-space: nowrap;
+}
+
+.field-search {
+    width: 70%;
+    min-width: 50px;
+}
+
+.btn-search {
+    width: 18%;
+    text-align: center;
+}
+
+.nav_t_main {
+    text-decoration: none;
+    font-size: 40px;
+    padding: 10px;
+    width: 40%;
+    height: 50px;
+    background-color: darkblue;
+    vertical-align: center;
+    text-align: left;
+}
+
+.nav_t_td {
+    border-left: 1px solid lightgray;
+    text-decoration: none;
+    width: 10%;
+    height: 50px;
+    font-size: 18px;
+    background-color: darkblue;
+    vertical-align: center;
+    text-align: center;
+}
+
+.nav_t_td.search {
+    width: 30%;
+    border: none;
+}
+
+.url_td {
+    color: white;
+    text-decoration: none;
+}
+
+.table-cell-main {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+.table-cell {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.url_sbt {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}

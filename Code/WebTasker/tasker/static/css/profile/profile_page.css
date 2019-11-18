@@ -1,0 +1,217 @@
+p {
+    margin: 0 0 0 0;
+    padding: 10px 0 20px 0;
+}
+
+.page-block {
+    width: 80%;
+    white-space: nowrap;
+}
+
+.info-user {
+    vertical-align: top;
+    display: inline-block;
+    width: 30%;
+}
+
+.header-info {
+    border-radius: 15px 15px 0 0;
+    background-color: darkblue;
+    padding-top: 5px;
+    font-size: 20px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    color: white;
+}
+
+.table-info {
+    background-color: lightblue;
+    width: 100%;
+    padding: 5px 15px 0 15px;
+}
+
+.footer-info {
+    border-radius: 0 0 15px 15px;
+    background-color: darkblue;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    color: white;
+    white-space: normal;
+}
+
+a.settings-link {
+    width: 300px;
+    text-decoration: none;
+    color: white;
+}
+
+a.logout-link {
+    width: 300px;
+    text-decoration: none;
+    color: white;
+}
+
+.td-par {
+    width: 25%;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.td-val {
+    padding-bottom: 20px;
+    width: 75%;
+    font-size: 20px;
+}
+
+.projects-list {
+    display: inline-block;
+    width: 70%;
+}
+
+.project {
+    white-space: nowrap;
+}
+
+.title-project {
+    margin: 10px 0 0 0;
+    padding: 20px 0 20px 30px;
+    font-size: 25px;
+    text-align: left;
+    background-color: darkblue;
+    border-radius: 15px 15px 0 0;
+}
+
+.title-project p {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    font-size: 20px;
+    color: white;
+}
+
+.title-project a {
+    text-decoration: none;
+    color: white;
+}
+
+.body-project {
+    margin: 0 0 0 0;
+    padding: 10px 0 10px 10px;
+    background-color: lightblue;
+    text-align: left;
+
+}
+
+.par-project {
+    margin: 5px 0 5px 0;
+    padding: 0 0 0 0;
+    color: darkred;
+    font-size: 20px;
+
+}
+
+.description-project {
+    margin: 0 0 0 0;
+    padding: 10px 0 10px 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.tasks-project {
+    background-color: cornflowerblue;
+    text-align: left;
+    white-space: nowrap;
+
+}
+
+.task-project {
+    padding: 5px 0 5px 15px;
+}
+
+.Complete {
+    background-color: lightgreen;
+}
+
+.Canceled {
+    background-color: lightcoral;
+}
+
+.task-project.add {
+    padding: 15px 0 15px 20px;
+}
+
+.task-name-project {
+    display: inline-block;
+}
+
+.task-one-project {
+    padding-left: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: darkred;
+}
+
+.footer-project {
+    text-decoration: none;
+    padding: 15px 0 15px 20px;
+    background-color: lightblue;
+    text-align: left;
+    border-radius: 0 0 15px 15px;
+}
+
+.footer-project a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    color: darkred;
+}
+
+.settings {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.settings.add {
+    width: 130px;
+}
+
+.settings.change {
+    width: 80px;
+}
+
+.settings.complete {
+    width: 100px;
+}
+
+.settings.cancel {
+    width: 8%;
+}
+
+.settings.delete {
+    width: 70px;
+}
+
+.settings a {
+    text-decoration: none;
+    color: darkred;
+}
+
+.subtask-project {
+    padding: 5px 0 5px 55px;
+}
+
+.subtask-name-project {
+    display: inline-block;
+}
+
+.add-task-project {
+    text-decoration: none;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    color: darkred;
+}

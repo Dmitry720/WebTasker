@@ -1,9 +1,12 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
+from django.views.generic import DetailView
 
 from tasker.forms import UserSettingForm, UserCreateForm
-from tasker.managers import UserManager
+from tasker.managers import UserManager, ProjectManager
+from tasker.models import Project
 
 
 @login_required
@@ -51,3 +54,14 @@ def create_user_view(request):
         user.save()
         return redirect('profile_url', slug=user.username)
     return render(request, 'models_actions/user/user_create.html', context={'form': form, 'model_type': 'User'})
+
+
+@login_required
+def projects_view(request):
+    projects = ProjectManager.get_queryset()
+    return render(request, 'projects/projects_page.html', context={'projects': projects})
+
+
+class DetailsProjectView(LoginRequiredMixin, DetailView):
+    model = Project
+    template_name = 'models_actions/project/project_details.html'

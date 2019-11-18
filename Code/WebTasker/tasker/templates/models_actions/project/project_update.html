@@ -1,0 +1,26 @@
+{% extends 'models_actions/update_base.html' %}
+
+{% block model_content %}
+
+    {% for field in form %}
+        <div class="field-project">
+            {% for error in field.errors %}
+                <div class="error-field">
+                    <p class="error-field">error</p>
+                </div>
+            {% endfor %}
+            <div class="par-field-project">
+                {{ field.label_tag }}
+            </div>
+            <div class="val-field-project">
+                {{ field }}
+            </div>
+            {% if field.errors %}
+                {% if field.help_text %}
+                    <p class="help-error">{{ field.help_text|safe }}</p>
+                {% endif %}
+            {% endif %}
+        </div>
+    {% endfor %}
+
+{% endblock %}

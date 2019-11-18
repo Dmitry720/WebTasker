@@ -1,0 +1,75 @@
+.container {
+    width: 40%;
+    white-space: nowrap;
+}
+
+.header-project {
+    background-color: darkblue;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 15px 0 15px 0;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.header-project p {
+    margin: 0 0 0 0;
+}
+
+.field-project {
+    background-color: lightblue;
+    padding: 15px 0 0 0;
+}
+
+.confirm-field-project {
+    background-color: darkblue;
+    padding: 25px 0 25px 35px;
+    text-align: left;
+    border-radius: 0 0 15px 15px;
+}
+
+.par-field-project {
+    padding-top: 5px;
+    width: 30%;
+    text-align: right;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.val-field-project {
+    width: 70%;
+    text-align: left;
+    display: inline-block;
+}
+
+.btn-confirm-project {
+    color: darkblue;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+}
+
+.btn-confirm {
+    display: inline-block;
+    width: 17%;
+}
+
+.message {
+    color: red;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.help-error {
+    color: darkgoldenrod;
+}
+
+.error {
+    color: darkred;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

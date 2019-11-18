@@ -1,0 +1,84 @@
+.page-block {
+    width: 80%;
+}
+
+.title-project {
+    margin: 10px 0 0 0;
+    padding: 20px 0 20px 30px;
+    font-size: 25px;
+    text-align: left;
+    background-color: darkblue;
+    border-radius: 15px 15px 0 0;
+}
+
+.title-project p {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    font-size: 20px;
+    color: white;
+}
+
+.title-project a {
+    text-decoration: none;
+    color: white;
+}
+
+.body-project {
+    margin: 0 0 0 0;
+    padding: 10px 0 10px 10px;
+    background-color: lightblue;
+    text-align: left;
+
+}
+
+.par-project {
+    margin: 5px 0 5px 0;
+    padding: 0 0 0 0;
+    color: darkred;
+    font-size: 20px;
+
+}
+
+.description-project {
+    margin: 0 0 0 0;
+    padding: 10px 0 10px 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.tasks-project {
+    background-color: cornflowerblue;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.task-project {
+    padding: 5px 0 5px 15px;
+}
+
+.Complete {
+    background-color: lightgreen;
+}
+
+.Canceled {
+    background-color: lightcoral;
+}
+
+.task-name-project {
+    display: inline-block;
+}
+
+.task-link {
+    padding-left: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: darkred;
+}
+
+.footer-project {
+    text-decoration: none;
+    padding-top: 25px;
+    background-color: darkblue;
+    text-align: left;
+    border-radius: 0 0 15px 15px;
+}

@@ -1,0 +1,51 @@
+.body-page {
+    width: 80%;
+}
+
+.top-search-field {
+    background-color: darkblue;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 20px;
+    padding: 5px 0 5px 0;
+    white-space: nowrap;
+}
+
+.top-field-search {
+    width: 75%;
+}
+
+.top-btn-search {
+    width: 10%;
+}
+
+.block-header {
+    background-color: darkblue;
+    border-radius: 15px 15px 0 0;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.block-footer {
+    background-color: darkblue;
+    border-radius: 0 0 15px 15px;
+    height: 10px;
+    padding: 10px 0 10px 20px;
+}
+
+.decorate-block-results {
+    margin: 10px;
+}
+
+.element-result {
+    background-color: lightblue;
+    text-align: left;
+    padding: 5px 10px 5px 10px;
+}
+
+.element-result a {
+    text-decoration: none;
+    font-size: 25px;
+    color: darkred;
+}
