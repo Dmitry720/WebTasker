@@ -16,11 +16,11 @@ urlpatterns = [
     path('project/<slug>/', views.DetailsProjectView.as_view(), name='project_details_url'),
 
     # TASK
-    path('task/<slug>/', task_details_url, name='task_details_url'),
-    path('create-task/', create_task_url, name='create_task_url'),
-    path('edit-task/<slug>/', edit_task_url, name='edit_task_url'),
-    path('mark-completed-task/<slug>/', mark_task_complete, name='mark_task_complete'),
-    path('mark-canceled-task/<slug>/', mark_task_canceled, name='mark_task_canceled'),
+    path('task/<slug>/', views.DetailsTaskView.as_view(), name='task_details_url'),
+    path('create-task/', views.CreateTaskView.as_view(), name='create_task_url'),
+    path('edit-task/<slug>/', views.EditTaskView.as_view(), name='edit_task_url'),
+    path('mark-completed-task/<slug>/', views.mark_task_is_completed_view, name='mark_task_complete'),
+    path('mark-canceled-task/<slug>/', views.mark_task_is_canceled_view, name='mark_task_canceled'),
 
     # AUTH
     path('login/', user_login_url, name='user_login_url', kwargs={'redirect_authenticated_user': True}),

@@ -1,0 +1,43 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block style_page %}
+    <link rel='stylesheet' href="{% static 'css/details/details_of_task.css' %}">
+{% endblock %}
+
+{% block body_page %}
+    <div align="center">
+        <div class="page-block">
+            <div class="title-project">
+                <a href="{{ object.get_absolute_url }}">{{ object.title }}</a>
+            </div>
+            <div class="body-project">
+                <p>Description:</p>
+                <p class="val description">{{ object.description }}</p>
+                <p>Developer:
+                    <a href="{{ object.developer.get_absolute_url }}" class="val">{{ object.developer.username }}</a>
+                </p>
+                <p>
+                    Project:
+                    <a href="{{ object.project.get_absolute_url }}" class="val">{{ object.project }}</a>
+                </p>
+                <p>
+                    Data create:
+                    <span class="val">{{ object.date_create }}</span>
+                </p>
+                <p>
+                    Data due:
+                    <span class="val">{{ object.date_completion }}</span>
+                </p>
+                <p>Status:
+                    <span class="val">{{ object.task_status }}</span>
+                </p>
+            </div>
+            <div class="footer-project">
+                <p></p>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

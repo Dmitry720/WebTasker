@@ -1,0 +1,12 @@
+{% extends 'base_page.html' %}
+
+{% block style_page %}
+{% endblock %}
+
+{% block body_page %}
+    <form method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete "{{ object }}"?</p>
+        <input type="submit" value="Confirm">
+    </form>
+{% endblock %}

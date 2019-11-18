@@ -1,0 +1,36 @@
+{% extends 'base_page.html' %}
+{% load widget_tweaks %}
+{% load static %}
+
+{% block style_page %}
+    <link rel='stylesheet' href="{% static 'css/CRUD/crud_model.css' %}">
+{% endblock %}
+
+{% block body_page %}
+    <div align="center">
+        <div class="container">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="header-project">
+                    <p>{{ model_type }}</p>
+                </div>
+
+                {% block model_content %}
+                    Model content empty
+                {% endblock %}
+
+                <div class="confirm-field-project">
+                    <div class="btn-confirm">
+                        <input type="submit" value="Save {{ model_type }}" class="btn-confirm-project">
+                    </div>
+                    {% if success %}
+                        <div class="message">
+                            <label>Successful!</label>
+                        </div>
+                    {% endif %}
+                </div>
+
+            </form>
+        </div>
+    </div>
+{% endblock %}
