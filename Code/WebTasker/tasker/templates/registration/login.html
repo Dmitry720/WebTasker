@@ -1,0 +1,81 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block style_page %}
+    <link rel='stylesheet' href="{% static "css/registration/login.css" %}">
+{% endblock %}
+
+{% block body_page %}
+    <div align="center">
+        <div class="main-page">
+            <div class="top-block">
+                Log In
+            </div>
+            {% if form.errors %}
+                <div class="row-block">
+                    <p>Your username and password didn't match. Please try again.</p>
+                </div>
+            {% endif %}
+
+            {% if next %}
+                {% if user.is_authenticated %}
+                    <div class="row-block">
+                        <p>Your account doesn't have access to this page. To proceed,
+                            please login with an account that has access.</p>
+                    </div>
+                {% else %}
+                    <div class="row-block">
+                        <p>Please login to see this page.</p>
+                    </div>
+                {% endif %}
+            {% endif %}
+
+
+            <form method="post">
+                {% csrf_token %}
+                <div class="row-block">
+                    {% if form.username.errors %}
+                        {% for error in form.username.errors %}
+                            <div class="error-field">
+                                {{ form.username.error }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    <div class="name-block">
+                        {{ form.username.label_tag }}
+                    </div>
+                    <div class="val-block">
+                        {{ form.username }}
+                    </div>
+                </div>
+                <div class="row-block">
+                    {% if form.username.errors %}
+                        {% for error in form.username.errors %}
+                            <div class="error-field">
+                                {{ form.username.error }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    <div class="name-block">
+                        {{ form.password.label_tag }}
+                    </div>
+                    <div class="val-block">
+                        {{ form.password }}
+                    </div>
+                </div>
+
+                <div class="btn-block">
+                    <input type="submit" value="Login" class="btn-confirm"/>
+                    <input type="hidden" name="next" value="{{ next }}"/>
+                    <div class="registration-block">
+                        Are you new here? <a href="{% url 'create_user_url' %}" class="registration-link">Registration</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    {# Assumes you setup the password_reset view in your URLconf #}
+
+{% endblock %}

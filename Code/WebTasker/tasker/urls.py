@@ -1,9 +1,10 @@
+from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import path
 from . import views
 
 urlpatterns = [
     # BASE
-    path('', main_url, name='main_url'),
+    path('', views.projects_view, name='main_url'),
 
     # USERS
     path('create-user/', views.create_user_view, name='create_user_url'),
@@ -23,9 +24,9 @@ urlpatterns = [
     path('mark-canceled-task/<slug>/', views.mark_task_is_canceled_view, name='mark_task_canceled'),
 
     # AUTH
-    path('login/', user_login_url, name='user_login_url', kwargs={'redirect_authenticated_user': True}),
-    path('logout/', user_logout_url, name='user_logout_url'),
+    path('login/', LoginView.as_view(), name='user_login_url', kwargs={'redirect_authenticated_user': True}),
+    path('logout/', LogoutView.as_view(), name='user_logout_url'),
 
     # DELETING
-    path('delete-task/<slug>/', delete_task, name='delete_task'),
+    path('delete-task/<slug>/', views.DeleteTaskView.as_view(), name='delete_task'),
 ]
