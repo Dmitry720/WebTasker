@@ -1,0 +1,55 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block style_page %}
+    <link rel='stylesheet' href="{% static 'css/profile/profile_base.css' %}">
+    {% block profile_styles %}
+        No extended styles loaded
+    {% endblock %}
+{% endblock %}
+
+{% block body_page %}
+    <div align="center">
+        <div class="page-block">
+            <div class="info-user">
+                <div align="center" class="header-info">
+                    <p>{{ user.username }}</p>
+                </div>
+                <table class="table-info">
+                    <tr>
+                        <td class="td-par">Name:</td>
+                        <td class="td-val">{{ user.first_name }}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-par">Surname:</td>
+                        <td class="td-val">{{ user.last_name }}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-par">Access:</td>
+                        <td class="td-val">
+                            Developer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-par">Mail:</td>
+                        <td class="td-val">{{ user.email }}</td>
+                    </tr>
+                </table>
+                <div class="footer-info">
+                    {% if not request_user or request_user == user %}
+                        <div class="half-for-link">
+                            <a href="{% url 'profile_settings_url' %}" class="settings-link">Settings</a>
+                        </div>
+                        <div class="half-for-link">
+                            <a href="{% url 'user_logout_url' %}" class="logout-link">Logout</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% block profile_content %}
+                Have no content on page
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

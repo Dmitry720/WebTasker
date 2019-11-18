@@ -1,0 +1,55 @@
+{% extends 'profile/profile_base.html' %}
+
+{% load static %}
+
+{% block profile_styles %}
+    <link rel='stylesheet' href="{% static 'css/profile/profile_settings.css' %}">
+{% endblock %}
+
+{% block profile_content %}
+    <div class="block-settings">
+        <div class="header-settings">
+            <label>Settings</label>
+        </div>
+        <div class="content-settings">
+            <form method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="category" value="info_change">
+                {% for field in form %}
+                    <div class="field-form-setting">
+                        <div class="par-setting">
+                            {{ field.label }}
+                        </div>
+                        <div class="val-setting">
+                            {{ field }}
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="field-form-setting btn-save-info">
+                    <input type="submit" value="Save" name="save-info">
+                </div>
+            </form>
+            <div class="pass-change-label">
+                <label>Change Password</label>
+            </div>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="category" value="pass_change">
+                {% for field in password_form %}
+                    <div class="field-form-setting">
+                        <div class="par-pswd-setting">
+                            {{ field.label }}
+                        </div>
+                        <div class="val-pswd-setting">
+                            {{ field }}
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="field-form-setting btn-save-password">
+                    <input type="submit" value="Save" name="save-info">
+                </div>
+            </form>
+        </div>
+        <div class="footer-settings"></div>
+    </div>
+{% endblock %}
