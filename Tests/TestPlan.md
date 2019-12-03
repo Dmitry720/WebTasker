@@ -71,4 +71,4 @@
 
 ## Представление результатов<a name="6"></a>
 
-Результаты представлены  в документе ["Результаты тестирования"](https://github.com/Dmitry720/WebTasker/blob/master/Testing/TestResults.md).
+Результаты представлены  в документе ["Результаты тестирования"](https://github.com/Dmitry720/WebTasker/blob/master/Tests/TestResults.md).
